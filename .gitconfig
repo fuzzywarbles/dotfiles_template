@@ -1,7 +1,7 @@
 [user]
 	name = fuzzywarbles
 	email = doormouse314@yahoo.com
-	signingkey = FE979E464CB4BA6B
+	signingkey = CC4E015DE16E5AC8
 [push]
 	default = simple
 [mergetool "fugitive"]
