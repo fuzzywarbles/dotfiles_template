@@ -6,6 +6,9 @@
 - clean: ['~', '~/.config']
 
 - link:
+   ~/.gitconfig: .gitconfig
+   ~/.gitignore_global: .gitignore_global
+   ~/.git_template: .git_template
    ~/.config/bspwm: config/bspwm
    ~/.config/compton: config/compton
    ~/.config/rofi: config/rofi
