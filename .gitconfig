@@ -4,8 +4,6 @@
 	signingkey = CC4E015DE16E5AC8
 [push]
 	default = simple
-[mergetool "fugitive"]
-	cmd = nvim -f -c \"Gvdiff\" \"$MERGED\"
 [merge]
 	tool = fugitive
 [alias]
@@ -34,8 +32,6 @@
 	tool = nvimdiff
 [difftool]
 	prompt = false
-[difftool "nvimdiff"]
-    cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [commit]
 	verbose = true
 [init]
