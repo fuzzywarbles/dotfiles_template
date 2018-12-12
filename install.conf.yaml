@@ -1,3 +1,19 @@
-- clean: []
-- link: {}
-- shell: []
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+   ~/.config/bspwm: config/bspwm
+   ~/.config/compton: config/compton
+   ~/.config/rofi: config/rofi
+   ~/.config/sxhkd: config/sxhkd
+   ~/.config/termite: config/termite
+   ~/.config/tmux: config/tmux
+
+- shell:
+    -
+      command: [git submodule update --init --recursive]
+      description: Installing/updating submodules
